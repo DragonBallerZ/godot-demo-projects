@@ -1,6 +1,11 @@
+# OFF since 2026-10-14 (the owner: no Dependabot pull requests): every entry below
+# carries `open-pull-requests-limit: 0`, GitHub's documented way to stop
+# version-update PRs; the repository's automatic security-update PRs are off in
+# its settings. Turning one back on is that one number.
 version: 2
 updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
+    open-pull-requests-limit: 0
